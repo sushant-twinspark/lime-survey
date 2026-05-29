@@ -1,4 +1,4 @@
-#!/bin/bash
+u#!/bin/bash
 set -e
 
 MAX_RETRIES=30
@@ -21,4 +21,4 @@ for i in $(seq 1 $MAX_RETRIES); do
     sleep "${RETRY_INTERVAL}"
 done
 
-exec /docker-entrypoint.sh "$@"
+exec /usr/local/bin/entrypoint.sh "$@"
