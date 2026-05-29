@@ -21,4 +21,4 @@ for i in $(seq 1 $MAX_RETRIES); do
     sleep "${RETRY_INTERVAL}"
 done
 
-exec /entrypoint.sh "$@"
+exec /docker-entrypoint.sh "$@"
