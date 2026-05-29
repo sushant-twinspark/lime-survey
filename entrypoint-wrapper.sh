@@ -1,4 +1,4 @@
-u#!/bin/bash
+#!/bin/bash
 set -e
 
 MAX_RETRIES=30
