@@ -1,5 +1,4 @@
-# FROM martialblog/limesurvey:6-apache
-FROM limesurvey/limesurvey:6-apache
+FROM martialblog/limesurvey:6-apache
 
 # Switch to root so we can write files — base image runs as non-root
 USER root
