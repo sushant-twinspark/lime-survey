@@ -13,7 +13,7 @@ for i in $(seq 1 $MAX_RETRIES); do
     fi
 
     if [ "$i" -eq "$MAX_RETRIES" ]; then
-        echo "[Init] FATAL: MySQL not available after ${MAX_RETRIES} retries. Exiting."
+        echo "[Init] FATAL: Cannot reach DB after ${MAX_RETRIES} retries. Exiting."
         exit 1
     fi
 
